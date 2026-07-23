@@ -1,0 +1,19 @@
+[package]
+name = "beevulyk-tonic-prometheus"
+version = "0.1.0"
+edition = "2024"
+description = "Prometheus metrics middleware (Tower Layer) for tonic gRPC servers."
+repository = "https://github.com/BeeVulyk/beevulyk-tonic-prometheus"
+homepage = "https://github.com/BeeVulyk/beevulyk-tonic-prometheus"
+license = "MIT OR Apache-2.0"
+
+[features]
+grpc_metrics_disabled = []
+
+[dependencies]
+prometheus = "0.14.0"
+once_cell = "1.19.0"
+thiserror = "2.0.12"
+tonic = "0.14"
+tower = "0.5"
+pin-project = "1.1.5"
